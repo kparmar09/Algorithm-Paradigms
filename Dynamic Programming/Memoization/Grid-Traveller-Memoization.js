@@ -21,7 +21,7 @@ console.log(gridTraveller(20, 20)); // Takes too long. Due to high time complexi
 
 // Memoized Grid Traveller Function
 // Time Complexity - O(n * m)
-// Time Complexity - O(n + m)
+// Space Complexity - O(n + m)
 const memoizedGridTraveller = (m, n, memo = {}) => {
   const key = m + "," + n;
   if (memo[key]) return memo[key];
